@@ -54,3 +54,11 @@ end
 function Animation:draw()
   love.graphics.draw(self.spriteBatch)
 end
+
+function Animation:getWidth()
+  return self.frameWidth
+end
+
+function Animation:getHeight()
+  return self.frameHeight
+end

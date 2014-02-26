@@ -18,3 +18,11 @@ end
 function Player:draw()
   self.animation:draw()
 end
+
+function Player:getWidth()
+  return self.animation:getWidth()
+end
+
+function Player:getHeight()
+  return self.animation:getHeight()
+end
