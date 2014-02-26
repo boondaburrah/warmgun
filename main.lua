@@ -13,7 +13,7 @@ end
 
 function love.load()
   if arg[#arg] == "-debug" then require("mobdebug").start() end
-  g_width, g_height = love.graphics.getDimensions()
+  g_width, g_height = love.window.getDimensions()
   g_playerAnim = Animation.new(love.graphics.newImage("content/shipAnimation.png"),  {x = 100, y = 100}, 115, 69, 8, (1/30), 1, true)
   g_player = Player.new(g_playerAnim, {x = 100, y = 100})
   g_playerMoveSpeed = 8
