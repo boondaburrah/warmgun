@@ -27,6 +27,10 @@ function Animation.new(image, x, y, frameWidth, frameHeight, frameCount, frameTi
 end
 
 function Animation:update(dt)
+  if self.active == false then
+    self.spriteBatch:set(self.spritePointer, self.spriteTable[self.currentFrame], self.x, self.y)
+    return
+  end
   self.elapsedTime = self.elapsedTime + dt
   if self.elapsedTime > self.frameTime then
     self.currentFrame = self.currentFrame + 1
