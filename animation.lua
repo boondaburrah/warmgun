@@ -1,12 +1,12 @@
 Animation = {}
 Animation.__index = Animation
 
-function Animation.new(image, x, y, frameWidth, frameHeight, frameCount, frameTime, scale, looping)
+function Animation.new(image, position, frameWidth, frameHeight, frameCount, frameTime, scale, looping)
   local self = setmetatable({}, Animation)
   self.spriteBatch = love.graphics.newSpriteBatch(image, 1)
   self.spriteTable = {}
-  self.x = x
-  self.y = y
+  self.x = position.x
+  self.y = position.y
   self.frameWidth = frameWidth
   self.frameHeight = frameHeight
   self.frameCount = frameCount
@@ -44,6 +44,11 @@ function Animation:update(dt)
     self.elapsedTime = 0
   end
   self.spriteBatch:set(self.spritePointer, self.spriteTable[self.currentFrame], self.x, self.y)
+end
+
+function Animation:setPosition(position)
+  self.x = position.x
+  self.y = position.y
 end
 
 function Animation:draw()
