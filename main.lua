@@ -1,5 +1,6 @@
 require("animation")
 require("player")
+require("background")
 require("funkt")
 
 function love.joystickadded(jstick)
