@@ -18,10 +18,13 @@ function love.load()
   g_playerAnim = Animation.new(love.graphics.newImage("content/shipAnimation.png"),  {x = 100, y = 100}, 115, 69, 8, (1/30), 1, true)
   g_player = Player.new(g_playerAnim, {x = 100, y = 100})
   g_playerMoveSpeed = 8
+  g_baseBackground = Background.new(love.graphics.newImage("content/bgLayer1.png"), 100)
 end
+
 function love.update(dt)
   f_updatePlayer()
   g_player:update(dt)
+  g_baseBackground:update(dt)
 end
 
 function f_updatePlayer()
@@ -32,5 +35,6 @@ function f_updatePlayer()
 end
 
 function love.draw()
+  g_baseBackground:draw()
   g_player:draw()
 end
