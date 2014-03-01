@@ -3,12 +3,11 @@ Background.__index = Background
 
 function Background.new(image, speed)
   local self = setmetatable({}, Background)
-  self.texture = image
   self.textureWidth, self.textureHeight = image:getDimensions()
   self.textureRepeats = (g_width / self.textureWidth) + 1
   self.spriteBatch = love.graphics.newSpriteBatch(image, self.textureRepeats)
   self.spriteBatchTable = {}
-  self.fullQuad = love.graphics.newQuad(0, 0, self.textureWidth, self.textureHeight, self.texture:getDimensions())
+  self.fullQuad = love.graphics.newQuad(0, 0, self.textureWidth, self.textureHeight, image:getDimensions())
   self.xoffset = 0
   self.speed = speed
   
