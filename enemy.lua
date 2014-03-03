@@ -21,10 +21,9 @@ function Enemy:update( dt )
 		return
 	end
 
-	self.animation:setPosition(self.position)
 	self.animation:update(dt)
 end
 
 function Enemy:draw()
-	self.animation:draw()
+	self.animation:draw(self.position)
 end

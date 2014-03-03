@@ -23,7 +23,8 @@ function love.load()
   g_backgroundOne = Background.new(love.graphics.newImage("content/bgLayer1.png"), 100)
   g_backgroundTwo = Background.new(love.graphics.newImage("content/bgLayer2.png"), 200)
   g_baseBackground = Background.new(love.graphics.newImage("content/mainbackground.png"), 25)
-  g_enemyAnim = Animation.new(love.graphics.newImage("content/mineAnimation.png"), {x = 800, y = 100}, 47, 61, 8, (1/30), 1, true)
+  g_enemyAnim = Animation.new(love.graphics.newImage("content/mineAnimation.png"), {x = 0, y = 0}, 47, 61, 8, (1/30), 1, true)
+  g_enemyList = nil
 end
 
 function love.update(dt)
@@ -40,6 +41,10 @@ function f_updatePlayer()
   g_player.position.y = g_player.position.y + g_gamepad:getGamepadAxis("lefty") * 8
   g_player.position.x = funkt.clamp(0, g_player.position.x, g_width - g_player:getWidth())
   g_player.position.y = funkt.clamp(0, g_player.position.y, g_height - g_player:getHeight())
+end
+
+function f_addEnemy()
+  
 end
 
 function love.draw()

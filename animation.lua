@@ -51,8 +51,12 @@ function Animation:setPosition(position)
   self.y = position.y
 end
 
-function Animation:draw()
-  love.graphics.draw(self.spriteBatch)
+function Animation:draw(position)
+  if position then
+    love.graphics.draw(self.spriteBatch, position.x, position.y)
+  else
+    love.graphics.draw(self.spriteBatch)
+  end
 end
 
 function Animation:getWidth()
