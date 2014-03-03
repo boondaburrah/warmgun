@@ -44,7 +44,13 @@ function f_updatePlayer()
 end
 
 function f_addEnemy()
-  
+  g_enemyList = {next = g_enemyList, value = Enemy.new(g_enemyAnim, {x = 800, y = 100})}
+end
+
+function f_drawList(list)
+  if list == nil then return end
+  list.value:draw()
+  f_drawList(list.next)
 end
 
 function love.draw()
