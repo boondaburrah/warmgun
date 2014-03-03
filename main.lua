@@ -37,6 +37,7 @@ function love.update(dt)
 end
 
 function f_updatePlayer()
+  assert(g_gamepad, "YA DUNN'T PLUG IN A GAMEPAD YA GOOB.")
   g_player.position.x = g_player.position.x + g_gamepad:getGamepadAxis("leftx") * 8
   g_player.position.y = g_player.position.y + g_gamepad:getGamepadAxis("lefty") * 8
   g_player.position.x = funkt.clamp(0, g_player.position.x, g_width - g_player:getWidth())
