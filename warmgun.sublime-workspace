@@ -11,24 +11,24 @@
 			"file": "enemy.lua",
 			"settings":
 			{
-				"buffer_size": 454,
-				"line_ending": "Windows"
+				"buffer_size": 577,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "animation.lua",
 			"settings":
 			{
-				"buffer_size": 1775,
-				"line_ending": "Windows"
+				"buffer_size": 1882,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 1566,
-				"line_ending": "Windows"
+				"buffer_size": 2044,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -110,7 +110,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -118,20 +118,21 @@
 					"file": "enemy.lua",
 					"settings":
 					{
-						"buffer_size": 454,
+						"buffer_size": 577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								450,
-								450
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -144,7 +145,7 @@
 					"file": "animation.lua",
 					"settings":
 					{
-						"buffer_size": 1775,
+						"buffer_size": 1882,
 						"regions":
 						{
 						},
@@ -162,7 +163,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -172,15 +173,15 @@
 					"file": "main.lua",
 					"settings":
 					{
-						"buffer_size": 1566,
+						"buffer_size": 2044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								53,
-								53
+								1320,
+								1320
 							]
 						],
 						"settings":
@@ -190,7 +191,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
