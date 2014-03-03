@@ -1,5 +1,6 @@
 require("animation")
 require("player")
+require("enemy")
 require("background")
 require("funkt")
 
@@ -22,6 +23,7 @@ function love.load()
   g_backgroundOne = Background.new(love.graphics.newImage("content/bgLayer1.png"), 100)
   g_backgroundTwo = Background.new(love.graphics.newImage("content/bgLayer2.png"), 200)
   g_baseBackground = Background.new(love.graphics.newImage("content/mainbackground.png"), 25)
+  g_enemyAnim = Animation.new(love.graphics.newImage("content/mineAnimation.png"), {x = 800, y = 100}, 47, 61, 8, (1/30), 1, true)
 end
 
 function love.update(dt)
@@ -30,6 +32,7 @@ function love.update(dt)
   g_baseBackground:update(dt)
   g_backgroundOne:update(dt)
   g_backgroundTwo:update(dt)
+  g_enemyAnim:update(dt)
 end
 
 function f_updatePlayer()
@@ -44,4 +47,6 @@ function love.draw()
   g_backgroundOne:draw()
   g_backgroundTwo:draw()
   g_player:draw()
+
+  g_enemyAnim:draw()
 end
