@@ -1,0 +1,259 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "enemy.lua",
+			"settings":
+			{
+				"buffer_size": 454,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "animation.lua",
+			"settings":
+			{
+				"buffer_size": 1775,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 1566,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/boondaburrah/Desktop/printinstall.txt",
+		"/C/Program Files (x86)/Microsoft Visual Studio 12.0/Common7/IDE/Extensions/Microsoft/XNA Game Studio 4.0/extension.vsixmanifest",
+		"/C/Users/boondaburrah/Documents/platypusbutts/Chapter1.xml",
+		"/C/Users/boondaburrah/Downloads/Chapter 3/Chapter 3.xml",
+		"/C/Users/boondaburrah/Downloads/Chapter 1/menuxmlinstructions.xml",
+		"/C/Users/boondaburrah/Documents/oxygine-framework/readme.VisualStudio",
+		"/C/Users/boondaburrah/Downloads/Chapter 1/Chapter1.xml",
+		"/C/Users/boondaburrah/Desktop/kesy/id_rsa.pub",
+		"/C/Users/boondaburrah/AppData/Local/Temp/Temp1_slac080k.zip/MSP430F20xx_Code_Examples/C/msp430x20x3_usi_02.c",
+		"/C/Users/boondaburrah/AppData/Local/Temp/Temp1_slac080k.zip/MSP430F20xx_Code_Examples/C/msp430x20x3_usi_03.c",
+		"/C/Users/boondaburrah/Downloads/an3268/stm32vldiscovery_package/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h",
+		"/C/Users/boondaburrah/Downloads/an3268/stm32vldiscovery_package/Utilities/STM32vldiscovery.c",
+		"/C/Users/boondaburrah/AppData/Local/Temp/Temp1_slac080k.zip/MSP430F20xx_Code_Examples/C/msp430x20x3_usi_01.c",
+		"/C/Users/boondaburrah/AppData/Local/Temp/Temp1_slac080k.zip/MSP430F20xx_Code_Examples/C/msp430x20x3_ta_uart2400.c",
+		"/C/Users/boondaburrah/Downloads/BootCamp5.0.5033/BootCamp/setup.exe",
+		"/C/Users/boondaburrah/Downloads/takju-jdq39-factory-5e273f02/takju-jdq39/flash-all.sh",
+		"/C/Users/boondaburrah/Downloads/BootCamp5.0.5033/BootCamp/BootCamp.xml",
+		"/C/Users/boondaburrah/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/4Y47RKV4/sms-20130311225550[1].xml",
+		"/C/Users/boondaburrah/Downloads/takju-jdq39-factory-5e273f02/takju-jdq39/flash-all.bat",
+		"/C/Users/boondaburrah/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/4Y47RKV4/sms[1].xsl"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "enemy.lua",
+					"settings":
+					{
+						"buffer_size": 454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "animation.lua",
+					"settings":
+					{
+						"buffer_size": 1775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "main.lua",
+					"settings":
+					{
+						"buffer_size": 1566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
