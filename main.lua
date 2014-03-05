@@ -28,7 +28,7 @@ function love.load()
 end
 
 function love.update(dt)
-  f_updatePlayer()
+  f_updatePlayer(dt)
   g_player:update(dt)
   g_baseBackground:update(dt)
   g_backgroundOne:update(dt)
@@ -36,10 +36,10 @@ function love.update(dt)
   g_enemyAnim:update(dt)
 end
 
-function f_updatePlayer()
+function f_updatePlayer(dt)
   assert(g_gamepad, "YA DUNN'T PLUG IN A GAMEPAD YA GOOB.")
-  g_player.position.x = g_player.position.x + g_gamepad:getGamepadAxis("leftx") * 8
-  g_player.position.y = g_player.position.y + g_gamepad:getGamepadAxis("lefty") * 8
+  g_player.position.x = g_player.position.x + g_gamepad:getGamepadAxis("leftx") * 180 * dt
+  g_player.position.y = g_player.position.y + g_gamepad:getGamepadAxis("lefty") * 180 * dt
   g_player.position.x = funkt.clamp(0, g_player.position.x, g_width - g_player:getWidth())
   g_player.position.y = funkt.clamp(0, g_player.position.y, g_height - g_player:getHeight())
 end
@@ -52,6 +52,12 @@ function f_drawList(list)
   if list == nil then return end
   list.value:draw()
   f_drawList(list.next)
+end
+
+function f_updateList(list, dt)
+  if list == nil then return end
+  list.value:update(dt)
+  f_updateList(list.next, dt)
 end
 
 function love.draw()
