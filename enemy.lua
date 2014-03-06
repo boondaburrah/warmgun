@@ -21,9 +21,15 @@ function Enemy:update( dt )
 		return
 	end
 
-	self.animation:update(dt)
+	-- self.animation:update(dt)
 end
 
 function Enemy:draw()
-	self.animation:draw(self.position)
+  if self.active then
+    self.animation:draw(self.position)
+  end
+end
+
+function Enemy:cleanMe()
+  return not self.active
 end

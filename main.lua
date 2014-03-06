@@ -25,6 +25,7 @@ function love.load()
   g_baseBackground = Background.new(love.graphics.newImage("content/mainbackground.png"), 25)
   g_enemyAnim = Animation.new(love.graphics.newImage("content/mineAnimation.png"), {x = 0, y = 0}, 47, 61, 8, (1/30), 1, true)
   g_enemyList = nil
+  f_addEnemy()
 end
 
 function love.update(dt)
@@ -34,6 +35,7 @@ function love.update(dt)
   g_backgroundOne:update(dt)
   g_backgroundTwo:update(dt)
   g_enemyAnim:update(dt)
+  f_updateList(g_enemyList, dt)
 end
 
 function f_updatePlayer(dt)
@@ -66,5 +68,6 @@ function love.draw()
   g_backgroundTwo:draw()
   g_player:draw()
 
-  g_enemyAnim:draw()
+  -- g_enemyAnim:draw()
+  f_drawList(g_enemyList)
 end
