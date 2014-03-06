@@ -15,6 +15,7 @@ end
 
 function love.load()
   if arg[#arg] == "-debug" then require("mobdebug").start() end
+  math.randomseed(os.time())
   love.window.setMode(854, 480)
   g_width, g_height = love.window.getDimensions()
   g_playerAnim = Animation.new(love.graphics.newImage("content/shipAnimation.png"),  {x = 100, y = 100}, 115, 69, 8, (1/30), 1, true)
@@ -26,6 +27,8 @@ function love.load()
   g_enemyAnim = Animation.new(love.graphics.newImage("content/mineAnimation.png"), {x = 0, y = 0}, 47, 61, 8, (1/30), 1, true)
   g_enemyList = nil
   f_addEnemy()
+  g_enemyDelay = 2
+  g_enemyDelayCounter = 0
 end
 
 function love.update(dt)
@@ -36,6 +39,11 @@ function love.update(dt)
   g_backgroundTwo:update(dt)
   g_enemyAnim:update(dt)
   f_updateList(g_enemyList, dt)
+  g_enemyDelayCounter = g_enemyDelayCounter + dt
+  if g_enemyDelayCounter > g_enemyDelay then
+    g_enemyDelayCounter = 0
+    f_addEnemy()
+  end
 end
 
 function f_updatePlayer(dt)
@@ -47,7 +55,7 @@ function f_updatePlayer(dt)
 end
 
 function f_addEnemy()
-  g_enemyList = {next = g_enemyList, value = Enemy.new(g_enemyAnim, {x = 800, y = 100})}
+  g_enemyList = {next = g_enemyList, value = Enemy.new(g_enemyAnim, {x = 800, y = math.random(0, g_height - g_enemyAnim:getHeight())})}
 end
 
 function f_drawList(list)
